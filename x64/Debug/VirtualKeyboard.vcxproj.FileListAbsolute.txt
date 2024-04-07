@@ -1,0 +1,5 @@
+D:\My\Олександр\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.vcxproj.AssemblyReference.cache
+D:\My\Олександр\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.vcxproj.SuggestedBindingRedirects.cache
+D:\My\Олександр\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.exe
+D:\My\Олександр\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.Form1.resources
+D:\My\Олександр\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.vcxproj.GenerateResource.cache
