@@ -1,3 +1,11 @@
 ﻿  VirtualKeyboard.cpp
+F:\Documents\(1,1): warning C4005: '__CLR_VER': macro redefinition
+  (compiling source file '/VirtualKeyboard.cpp')
+  F:\Documents\(1,1):
+  '__CLR_VER' previously declared on the command line
+  
+F:\Documents\(1,1): warning C4651: '/D__CLR_VER=40809181' specified for precompiled header but not for current compile
+  (compiling source file '/VirtualKeyboard.cpp')
+  
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   VirtualKeyboard.vcxproj -> F:\Documents\##VNTU\3 курс\2 семестр\Курсова Робота\VirtualKeyboard\x64\Debug\VirtualKeyboard.exe

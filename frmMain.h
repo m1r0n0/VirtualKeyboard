@@ -109,11 +109,12 @@ namespace VirtualKeyboard {
 	private: System::Windows::Forms::Button^ btnZ;
 	private: System::Windows::Forms::Button^ btnC;
 	private: System::Windows::Forms::Button^ btnComma;
+	private: System::Windows::Forms::Button^ btnM;
 
 
 
 
-	private: System::Windows::Forms::Button^ M;
+
 
 	private: System::Windows::Forms::Button^ btnBackSlashL;
 
@@ -270,6 +271,22 @@ private: System::Windows::Forms::StatusStrip^ stMain;
 private: System::Windows::Forms::ToolStripStatusLabel^ tslInfo;
 private: System::Windows::Forms::ToolStripProgressBar^ tspMain;
 private: System::Windows::Forms::MenuStrip^ menuStrip1;
+private: System::Windows::Forms::ToolStripDropDownButton^ tsbPalette;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorStandard;
+
+
+private: System::Windows::Forms::RadioButton^ rbNumLock;
+private: System::Windows::Forms::RadioButton^ rbCapsLock;
+private: System::Windows::Forms::RadioButton^ rbScrollLock;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorRed;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorBlue;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorGreen;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorYellow;
+private: System::Windows::Forms::ToolStripMenuItem^ tsbPaletteColorPurple;
+
+
+
+
 
 
 
@@ -327,7 +344,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnZ = (gcnew System::Windows::Forms::Button());
 			this->btnC = (gcnew System::Windows::Forms::Button());
 			this->btnComma = (gcnew System::Windows::Forms::Button());
-			this->M = (gcnew System::Windows::Forms::Button());
+			this->btnM = (gcnew System::Windows::Forms::Button());
 			this->btnBackSlashL = (gcnew System::Windows::Forms::Button());
 			this->btnEnter = (gcnew System::Windows::Forms::Button());
 			this->btnTilda = (gcnew System::Windows::Forms::Button());
@@ -412,9 +429,19 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->tsbAbout = (gcnew System::Windows::Forms::ToolStripButton());
 			this->tsbInfo = (gcnew System::Windows::Forms::ToolStripButton());
+			this->tsbPalette = (gcnew System::Windows::Forms::ToolStripDropDownButton());
+			this->tsbPaletteColorStandard = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->stMain = (gcnew System::Windows::Forms::StatusStrip());
 			this->tslInfo = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->tspMain = (gcnew System::Windows::Forms::ToolStripProgressBar());
+			this->rbNumLock = (gcnew System::Windows::Forms::RadioButton());
+			this->rbCapsLock = (gcnew System::Windows::Forms::RadioButton());
+			this->rbScrollLock = (gcnew System::Windows::Forms::RadioButton());
+			this->tsbPaletteColorRed = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tsbPaletteColorBlue = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tsbPaletteColorGreen = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tsbPaletteColorYellow = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tsbPaletteColorPurple = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panelMainKB->SuspendLayout();
 			this->panelToolsKB->SuspendLayout();
 			this->panel2->SuspendLayout();
@@ -507,7 +534,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnQ->TabIndex = 2;
 			this->btnQ->Text = L"Q";
 			this->btnQ->UseVisualStyleBackColor = true;
-			this->btnQ->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnQ->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnW
 			// 
@@ -520,7 +547,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnW->TabIndex = 1;
 			this->btnW->Text = L"W";
 			this->btnW->UseVisualStyleBackColor = true;
-			this->btnW->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnW->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnE
 			// 
@@ -533,7 +560,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnE->TabIndex = 2;
 			this->btnE->Text = L"E";
 			this->btnE->UseVisualStyleBackColor = true;
-			this->btnE->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnE->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnR
 			// 
@@ -546,7 +573,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnR->TabIndex = 1;
 			this->btnR->Text = L"R";
 			this->btnR->UseVisualStyleBackColor = true;
-			this->btnR->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnR->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnT
 			// 
@@ -559,7 +586,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnT->TabIndex = 2;
 			this->btnT->Text = L"T";
 			this->btnT->UseVisualStyleBackColor = true;
-			this->btnT->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnT->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnY
 			// 
@@ -572,7 +599,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnY->TabIndex = 1;
 			this->btnY->Text = L"Y";
 			this->btnY->UseVisualStyleBackColor = true;
-			this->btnY->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnY->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnU
 			// 
@@ -585,7 +612,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnU->TabIndex = 2;
 			this->btnU->Text = L"U";
 			this->btnU->UseVisualStyleBackColor = true;
-			this->btnU->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnU->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnI
 			// 
@@ -598,7 +625,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnI->TabIndex = 1;
 			this->btnI->Text = L"I";
 			this->btnI->UseVisualStyleBackColor = true;
-			this->btnI->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnI->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnO
 			// 
@@ -611,7 +638,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnO->TabIndex = 2;
 			this->btnO->Text = L"O";
 			this->btnO->UseVisualStyleBackColor = true;
-			this->btnO->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnO->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnCloseSquareBracket
 			// 
@@ -637,7 +664,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnЗ->TabIndex = 1;
 			this->btnЗ->Text = L"P";
 			this->btnЗ->UseVisualStyleBackColor = true;
-			this->btnЗ->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnЗ->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnOpenSquareBracket
 			// 
@@ -663,7 +690,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnJ->TabIndex = 9;
 			this->btnJ->Text = L"J";
 			this->btnJ->UseVisualStyleBackColor = true;
-			this->btnJ->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnJ->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnH
 			// 
@@ -676,7 +703,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnH->TabIndex = 3;
 			this->btnH->Text = L"H";
 			this->btnH->UseVisualStyleBackColor = true;
-			this->btnH->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnH->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnQuotes
 			// 
@@ -702,7 +729,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnD->TabIndex = 11;
 			this->btnD->Text = L"D";
 			this->btnD->UseVisualStyleBackColor = true;
-			this->btnD->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnD->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnG
 			// 
@@ -715,7 +742,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnG->TabIndex = 12;
 			this->btnG->Text = L"G";
 			this->btnG->UseVisualStyleBackColor = true;
-			this->btnG->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnG->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnSemiColon
 			// 
@@ -741,7 +768,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnS->TabIndex = 5;
 			this->btnS->Text = L"S";
 			this->btnS->UseVisualStyleBackColor = true;
-			this->btnS->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnS->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnBackSlash
 			// 
@@ -767,7 +794,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnF->TabIndex = 7;
 			this->btnF->Text = L"F";
 			this->btnF->UseVisualStyleBackColor = true;
-			this->btnF->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnF->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnL
 			// 
@@ -780,7 +807,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnL->TabIndex = 13;
 			this->btnL->Text = L"L";
 			this->btnL->UseVisualStyleBackColor = true;
-			this->btnL->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnL->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnK
 			// 
@@ -793,7 +820,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnK->TabIndex = 8;
 			this->btnK->Text = L"K";
 			this->btnK->UseVisualStyleBackColor = true;
-			this->btnK->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnK->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnA
 			// 
@@ -806,7 +833,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnA->TabIndex = 14;
 			this->btnA->Text = L"A";
 			this->btnA->UseVisualStyleBackColor = true;
-			this->btnA->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnA->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnN
 			// 
@@ -819,7 +846,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnN->TabIndex = 21;
 			this->btnN->Text = L"N";
 			this->btnN->UseVisualStyleBackColor = true;
-			this->btnN->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnN->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnB
 			// 
@@ -832,7 +859,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnB->TabIndex = 15;
 			this->btnB->Text = L"B";
 			this->btnB->UseVisualStyleBackColor = true;
-			this->btnB->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnB->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnSlash
 			// 
@@ -858,7 +885,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnX->TabIndex = 23;
 			this->btnX->Text = L"X";
 			this->btnX->UseVisualStyleBackColor = true;
-			this->btnX->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnX->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnV
 			// 
@@ -871,7 +898,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnV->TabIndex = 24;
 			this->btnV->Text = L"V";
 			this->btnV->UseVisualStyleBackColor = true;
-			this->btnV->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnV->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnDot
 			// 
@@ -897,7 +924,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnZ->TabIndex = 17;
 			this->btnZ->Text = L"Z";
 			this->btnZ->UseVisualStyleBackColor = true;
-			this->btnZ->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnZ->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnC
 			// 
@@ -910,7 +937,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnC->TabIndex = 19;
 			this->btnC->Text = L"C";
 			this->btnC->UseVisualStyleBackColor = true;
-			this->btnC->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnC->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnComma
 			// 
@@ -925,18 +952,18 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->btnComma->UseVisualStyleBackColor = true;
 			this->btnComma->Click += gcnew System::EventHandler(this, &frmMain::btnComma_Click);
 			// 
-			// M
+			// btnM
 			// 
-			this->M->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->btnM->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->M->Location = System::Drawing::Point(562, 267);
-			this->M->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
-			this->M->Name = L"M";
-			this->M->Size = System::Drawing::Size(61, 60);
-			this->M->TabIndex = 20;
-			this->M->Text = L"M";
-			this->M->UseVisualStyleBackColor = true;
-			this->M->Click += gcnew System::EventHandler(this, &frmMain::AtoZ);
+			this->btnM->Location = System::Drawing::Point(562, 267);
+			this->btnM->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
+			this->btnM->Name = L"btnM";
+			this->btnM->Size = System::Drawing::Size(61, 60);
+			this->btnM->TabIndex = 20;
+			this->btnM->Text = L"M";
+			this->btnM->UseVisualStyleBackColor = true;
+			this->btnM->Click += gcnew System::EventHandler(this, &frmMain::ClickAtoZ);
 			// 
 			// btnBackSlashL
 			// 
@@ -1851,7 +1878,7 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->panelMainKB->Controls->Add(this->btnDot);
 			this->panelMainKB->Controls->Add(this->btnBackSlashL);
 			this->panelMainKB->Controls->Add(this->btnZ);
-			this->panelMainKB->Controls->Add(this->M);
+			this->panelMainKB->Controls->Add(this->btnM);
 			this->panelMainKB->Controls->Add(this->btnC);
 			this->panelMainKB->Controls->Add(this->btnWin);
 			this->panelMainKB->Controls->Add(this->btnComma);
@@ -1927,30 +1954,30 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			// новийToolStripMenuItem
 			// 
 			this->новийToolStripMenuItem->Name = L"новийToolStripMenuItem";
-			this->новийToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->новийToolStripMenuItem->Size = System::Drawing::Size(124, 22);
 			this->новийToolStripMenuItem->Text = L"Новий";
 			// 
 			// відкритиToolStripMenuItem
 			// 
 			this->відкритиToolStripMenuItem->Name = L"відкритиToolStripMenuItem";
-			this->відкритиToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->відкритиToolStripMenuItem->Size = System::Drawing::Size(124, 22);
 			this->відкритиToolStripMenuItem->Text = L"Відкрити";
 			// 
 			// зберегтиToolStripMenuItem
 			// 
 			this->зберегтиToolStripMenuItem->Name = L"зберегтиToolStripMenuItem";
-			this->зберегтиToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->зберегтиToolStripMenuItem->Size = System::Drawing::Size(124, 22);
 			this->зберегтиToolStripMenuItem->Text = L"Зберегти";
 			// 
 			// toolStripSeparator1
 			// 
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
+			this->toolStripSeparator1->Size = System::Drawing::Size(121, 6);
 			// 
 			// закритиToolStripMenuItem1
 			// 
 			this->закритиToolStripMenuItem1->Name = L"закритиToolStripMenuItem1";
-			this->закритиToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->закритиToolStripMenuItem1->Size = System::Drawing::Size(124, 22);
 			this->закритиToolStripMenuItem1->Text = L"Закрити";
 			// 
 			// інформаціяToolStripMenuItem
@@ -1978,9 +2005,9 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			// tsMain
 			// 
 			this->tsMain->ImageScalingSize = System::Drawing::Size(32, 32);
-			this->tsMain->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+			this->tsMain->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
 				this->tsbNew, this->tsbOpen,
-					this->tsbSave, this->toolStripSeparator3, this->tsbAbout, this->tsbInfo
+					this->tsbSave, this->toolStripSeparator3, this->tsbAbout, this->tsbInfo, this->tsbPalette
 			});
 			this->tsMain->Location = System::Drawing::Point(0, 24);
 			this->tsMain->Name = L"tsMain";
@@ -2038,6 +2065,26 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->tsbInfo->Size = System::Drawing::Size(36, 36);
 			this->tsbInfo->Text = L"Info";
 			// 
+			// tsbPalette
+			// 
+			this->tsbPalette->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			this->tsbPalette->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->tsbPaletteColorStandard,
+					this->tsbPaletteColorRed, this->tsbPaletteColorBlue, this->tsbPaletteColorGreen, this->tsbPaletteColorYellow, this->tsbPaletteColorPurple
+			});
+			this->tsbPalette->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tsbPalette.Image")));
+			this->tsbPalette->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->tsbPalette->Name = L"tsbPalette";
+			this->tsbPalette->Size = System::Drawing::Size(45, 36);
+			this->tsbPalette->Text = L"Палітра";
+			this->tsbPalette->TextImageRelation = System::Windows::Forms::TextImageRelation::TextBeforeImage;
+			// 
+			// tsbPaletteColorStandard
+			// 
+			this->tsbPaletteColorStandard->Name = L"tsbPaletteColorStandard";
+			this->tsbPaletteColorStandard->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorStandard->Text = L"Стандартний колір";
+			// 
 			// stMain
 			// 
 			this->stMain->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) { this->tslInfo, this->tspMain });
@@ -2060,11 +2107,80 @@ private: System::Windows::Forms::MenuStrip^ menuStrip1;
 			this->tspMain->Name = L"tspMain";
 			this->tspMain->Size = System::Drawing::Size(100, 16);
 			// 
+			// rbNumLock
+			// 
+			this->rbNumLock->AutoSize = true;
+			this->rbNumLock->Enabled = false;
+			this->rbNumLock->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->rbNumLock->Location = System::Drawing::Point(1274, 126);
+			this->rbNumLock->Name = L"rbNumLock";
+			this->rbNumLock->Size = System::Drawing::Size(88, 20);
+			this->rbNumLock->TabIndex = 47;
+			this->rbNumLock->Text = L"Num Lock";
+			this->rbNumLock->UseVisualStyleBackColor = true;
+			// 
+			// rbCapsLock
+			// 
+			this->rbCapsLock->AutoSize = true;
+			this->rbCapsLock->Enabled = false;
+			this->rbCapsLock->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->rbCapsLock->Location = System::Drawing::Point(1362, 126);
+			this->rbCapsLock->Name = L"rbCapsLock";
+			this->rbCapsLock->Size = System::Drawing::Size(89, 20);
+			this->rbCapsLock->TabIndex = 48;
+			this->rbCapsLock->Text = L"Caps Lock";
+			this->rbCapsLock->UseVisualStyleBackColor = true;
+			// 
+			// rbScrollLock
+			// 
+			this->rbScrollLock->AutoSize = true;
+			this->rbScrollLock->Enabled = false;
+			this->rbScrollLock->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->rbScrollLock->Location = System::Drawing::Point(1451, 126);
+			this->rbScrollLock->Name = L"rbScrollLock";
+			this->rbScrollLock->Size = System::Drawing::Size(96, 20);
+			this->rbScrollLock->TabIndex = 48;
+			this->rbScrollLock->Text = L"Scroll Lock";
+			this->rbScrollLock->UseVisualStyleBackColor = true;
+			// 
+			// tsbPaletteColorRed
+			// 
+			this->tsbPaletteColorRed->Name = L"tsbPaletteColorRed";
+			this->tsbPaletteColorRed->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorRed->Text = L"Червоний";
+			// 
+			// tsbPaletteColorBlue
+			// 
+			this->tsbPaletteColorBlue->Name = L"tsbPaletteColorBlue";
+			this->tsbPaletteColorBlue->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorBlue->Text = L"Синій";
+			// 
+			// tsbPaletteColorGreen
+			// 
+			this->tsbPaletteColorGreen->Name = L"tsbPaletteColorGreen";
+			this->tsbPaletteColorGreen->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorGreen->Text = L"Зелений";
+			// 
+			// tsbPaletteColorYellow
+			// 
+			this->tsbPaletteColorYellow->Name = L"tsbPaletteColorYellow";
+			this->tsbPaletteColorYellow->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorYellow->Text = L"Жовтий";
+			// 
+			// tsbPaletteColorPurple
+			// 
+			this->tsbPaletteColorPurple->Name = L"tsbPaletteColorPurple";
+			this->tsbPaletteColorPurple->Size = System::Drawing::Size(180, 22);
+			this->tsbPaletteColorPurple->Text = L"Фіолетовий";
+			// 
 			// frmMain
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(7, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1560, 559);
+			this->Controls->Add(this->rbScrollLock);
+			this->Controls->Add(this->rbCapsLock);
+			this->Controls->Add(this->rbNumLock);
 			this->Controls->Add(this->stMain);
 			this->Controls->Add(this->tsMain);
 			this->Controls->Add(this->panel2);
@@ -2124,7 +2240,7 @@ private: System::Void btnNumAsterisk_Click(System::Object^ sender, System::Event
 private: System::Void btnNumSlash_Click(System::Object^ sender, System::EventArgs^ e) {
 	send_handler("{DIVIDE}");
 }
-private: System::Void AtoZ(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void ClickAtoZ(System::Object^ sender, System::EventArgs^ e) {
 	Button^ letter = safe_cast<Button^> (sender);
 	if(chkCapsLock->Checked == true || chkShift->Checked == true || chkShiftR->Checked == true)
 	{
@@ -2428,24 +2544,19 @@ private: void send_handler(String^ text)
 
 	if (chkAlt->Checked || chkAltR->Checked)
 	{
-		preffix += "%";
 		chkAlt->Checked = false;
 		chkAltR->Checked = false;
 	}
 	if (chkCtrl->Checked || chkCtrlR->Checked)
 	{
-		preffix += "^";
 		chkCtrl->Checked = false;
 		chkCtrlR->Checked = false;
 	}
 	if (chkShift->Checked || chkShiftR->Checked)
 	{
-		preffix += "+";
 		chkShift->Checked = false;
 		chkShiftR->Checked = false;
 	}
-	}
-private: System::Void закритиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|solutionrelative:settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\appSettings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|solutionrelative:appSettings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\VirtualKeyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|solutionrelative:VirtualKeyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|solutionrelative:frmMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96EFBF87-F362-490D-A711-D91633941E18}|VirtualKeyboard.vcxproj|F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,37 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "settings.json",
+              "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\settings.json",
+              "RelativeDocumentMoniker": "settings.json",
+              "ToolTip": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\settings.json",
+              "RelativeToolTip": "settings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T20:17:34.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appSettings.h",
+              "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\appSettings.h",
+              "RelativeDocumentMoniker": "appSettings.h",
+              "ToolTip": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\appSettings.h",
+              "RelativeToolTip": "appSettings.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T20:12:43.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cpp",
+              "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.cpp",
+              "RelativeDocumentMoniker": "frmMain.cpp",
+              "ToolTip": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.cpp",
+              "RelativeToolTip": "frmMain.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-14T20:11:55.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmMain.h",
               "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.h",
               "RelativeDocumentMoniker": "frmMain.h",
               "ToolTip": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.h",
               "RelativeToolTip": "frmMain.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "ViewState": "AQIAAMkJAAAAAAAAAAASwP8JAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-07T17:49:52.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "VirtualKeyboard.cpp",
               "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\VirtualKeyboard.cpp",
               "RelativeDocumentMoniker": "VirtualKeyboard.cpp",
               "ToolTip": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\VirtualKeyboard.cpp",
               "RelativeToolTip": "VirtualKeyboard.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-07T17:29:40.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "frmMain.h [Design]",
               "DocumentMoniker": "F:\\Documents\\##VNTU\\3 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430 \u0420\u043E\u0431\u043E\u0442\u0430\\VirtualKeyboard\\frmMain.h",
               "RelativeDocumentMoniker": "frmMain.h",
